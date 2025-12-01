@@ -48,3 +48,71 @@ FROM layoffs_staging;
 SELECT * 
 FROM layoffs_staging2;
 
+DELETE
+FROM layoffs_staging2
+WHERE row_num>1;
+
+SELECT * 
+FROM layoffs_staging2
+WHERE row_num>1;
+
+-- 2. STANDARDIZING DATA
+SELECT company, TRIM(Company)
+FROM layoffs_staging2;
+-- TRIM is used for removing white spaces at the begining 
+UPDATE layoffs_staging2
+SET company=TRIM(Company);
+
+SELECT company, TRIM(Company)
+FROM layoffs_staging2;
+
+SELECT DISTINCT(industry)
+FROM layoffs_staging2
+ORDER BY 1;
+
+SELECT * 
+FROM layoffs_staging2
+WHERE industry LIKE 'Crypto%';
+-- We need to update Crypto currency to Crypto for standardizing
+
+UPDATE layoffs_staging2
+SET industry='Crypto'
+WHERE industry like 'Crypto%';
+
+SELECT DISTINCT(location)
+FROM layoffs_staging2
+ORDER BY 1;
+
+-- We need to country names
+SELECT DISTINCT(country)
+FROM layoffs_staging2
+ORDER BY 1;
+
+SELECT DISTINCT(country)
+FROM layoffs_staging2
+ORDER BY 1;
+
+SELECT DISTINCT(country), TRIM(TRAILING '.' FROM country)
+FROM layoffs_staging2
+ORDER BY 1;
+
+UPDATE layoffs_staging2
+SET country=TRIM(TRAILING '.' FROM country)
+WHERE country like 'United States%';
+
+-- Converting DATE column from TEXT to DATE
+SELECT `date`
+FROM layoffs_staging2;
+
+SELECT `date`,
+STR_TO_DATE(`date`,'%m/%d/%Y')
+FROM layoffs_staging2;
+
+UPDATE layoffs_staging2
+SET `date`= STR_TO_DATE(`date`,'%m/%d/%Y');
+
+SELECT `date`
+FROM layoffs_staging2;
+
+ALTER TABLE layoffs_staging2
+MODIFY COLUMN `date` DATE;
