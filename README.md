@@ -74,3 +74,65 @@
             Data cleaning & preprocessing
             Beginner data pipeline project
             AI / Data / Automation internship portfolio
+
+        **3. Data Cleaning in SQL – Global Layoffs Dataset**            \
+This project focuses on cleaning and standardizing a global layoffs dataset using SQL. The goal is to transform raw, inconsistent data into a reliable format suitable for analysis.
+    📌 Project Overview
+
+The dataset contained duplicates, inconsistent text values, incorrect date formats, and missing data. SQL queries were used to systematically clean, standardize, and validate the data.
+
+⚙️ Key Data Cleaning Steps
+
+Created staging tables to preserve raw data
+
+Identified and removed duplicate records using ROW_NUMBER()
+
+Trimmed whitespace and standardized text fields
+
+Normalized industry and country values
+
+Converted date column from text to DATE format
+
+Handled NULL and blank values
+
+Removed irrelevant rows and temporary columns
+
+🛠 Tech Stack
+
+SQL (MySQL)
+
+Window Functions
+
+CTEs
+
+Data Definition & Manipulation Queries
+
+📊 Dataset Fields
+
+Company
+
+Location
+
+Industry
+
+Total Laid Off
+
+Percentage Laid Off
+
+Date
+
+Stage
+
+Country
+
+Funds Raised (Millions)
+
+🎯 Use Case
+
+Data cleaning & preprocessing practice
+
+SQL portfolio project
+
+Foundation for exploratory data analysis
+
+Data / BI / AI Automation internship showcase
