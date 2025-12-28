@@ -145,4 +145,57 @@
     SQL Server
     Tableau
 
+**6.Housing Data Cleaning Using SQL**
+This project focuses on cleaning and transforming raw housing data using SQL. The objective is to improve data quality, standardize formats, remove inconsistencies, and prepare the dataset for analysis or visualization.
+**Dataset**
+HousingData table containing property sales information
+**Data Cleaning Steps**
+    **1. Date Standardization**
+    Converted the SaleDate column into a proper DATE format
+    Created a new column SaleDateConverted for consistency
+    **2. Handling Missing Property Addresses**
+    Identified NULL property addresses
+    Used self-joins on ParcelID to populate missing PropertyAddress values
+    **3. Splitting Address Columns**
+    Split PropertyAddress into:
+    PropertySplitAddress
+    PropertySplitCity
+    Used SUBSTRING and CHARINDEX functions
+    **4. Splitting Owner Address**
+    Split OwnerAddress into:
+    OwnerSplitAddress
+    OwnerSplitCity
+    OwnerSplitState
+    Used PARSENAME with string replacement
+    **5. Standardizing Categorical Values**
+    Converted SoldAsVacant values from 0 and 1 to YES and NO
+    Ensured consistency across the dataset
+    **6. Removing Duplicates**
+    Identified duplicate records using ROW_NUMBER() and CTE
+    Flagged duplicates based on:
+    ParcelID
+    PropertyAddress
+    SalePrice
+    SaleDate
+    LegalReference
+    **7. Dropping Unused Columns**
+    Removed unnecessary columns after transformation:
+    OwnerAddress
+    TaxDistrict
+    PropertyAddress
+    SaleDate
+**SQL Concepts Used**
+Data type conversion
+Self joins
+String functions (SUBSTRING, CHARINDEX, PARSENAME)
+Conditional logic (CASE)
+Common Table Expressions (CTEs)
+Window functions
+Data normalization
+**Purpose**
+Improve data accuracy and consistency
+Prepare housing data for reporting and analysis
+Demonstrate SQL data cleaning skills for portfolio projects
+**Tools**
+SQL Server
    
