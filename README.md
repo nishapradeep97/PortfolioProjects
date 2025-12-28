@@ -18,9 +18,9 @@
           python file_organizer.py
 
 2.**NHL Team Statistics Web Scraping Project**
-        This project scrapes NHL team statistics from a website using BeautifulSoup, cleans the extracted data, and structures it into a usable tabular format for         analysis.
+        This project scrapes NHL team statistics from a website using BeautifulSoup, cleans the extracted data, and structures it into a usable tabular format for analysis.
     **📌 Project Overview**
-        The goal of this project is to demonstrate how raw HTML data can be collected, cleaned, and transformed into structured data suitable for analysis or              automation workflows.
+        The goal of this project is to demonstrate how raw HTML data can be collected, cleaned, and transformed into structured data suitable for analysis or automation workflows.
         **⚙️ Key Steps**
         Scraped HTML table data using BeautifulSoup
         Extracted team-wise statistics row by row
@@ -45,6 +45,7 @@
         Web scraping practice
         Data cleaning & preprocessing
         Beginner data pipeline project
+        
 3.**Data Cleaning in SQL – Global Layoffs Dataset**
     This project focuses on cleaning and standardizing a global layoffs dataset using SQL. The goal is to transform raw, inconsistent data into a reliable format suitable for analysis.
     **Project Overview**
@@ -117,5 +118,31 @@
     Data analysis & exploration practice
     Foundation for dashboards and visualizations
     Data Analyst / BI / AI Automation internship showcase
+
+**5.COVID-19 Tableau Dashboard – SQL Queries**
+    This project contains SQL queries used to clean, transform, and analyze COVID-19 data for visualization in Tableau dashboards. The analysis focuses on global and regional trends related to cases, deaths, and vaccinations.
+    **Data Sources**
+    CovidDeaths
+    CovidVaccinations
+    **Key Analyses**
+    Rolling number of people vaccinated by country and date
+    Global total cases, total deaths, and death percentage
+    Total death count by continent and region
+    Countries with the highest infection rate relative to population
+    Country-wise and date-wise infection trends
+    Percentage of population vaccinated using window functions
+    **SQL Concepts Used**
+    Joins between multiple datasets
+    Aggregate functions (SUM, MAX)
+    Window functions (OVER, PARTITION BY)
+    Common Table Expressions (CTEs)
+    Data filtering and grouping for visualization consistency
+    **Purpose**
+    Prepare structured datasets for Tableau dashboards
+    Enable data-driven insights into COVID-19 trends
+    Demonstrate SQL and business intelligence skills for portfolio projects
+    **Tools**
+    SQL Server
+    Tableau
 
    
