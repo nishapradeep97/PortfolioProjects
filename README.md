@@ -45,8 +45,7 @@
         Web scraping practice
         Data cleaning & preprocessing
         Beginner data pipeline project
-
-3. **Data Cleaning in SQL – Global Layoffs Dataset**
+3.**Data Cleaning in SQL – Global Layoffs Dataset**
     This project focuses on cleaning and standardizing a global layoffs dataset using SQL. The goal is to transform raw, inconsistent data into a reliable format suitable for analysis.
     **Project Overview**
        The dataset contained duplicates, inconsistent text values, incorrect date formats, and missing data. SQL queries were used to systematically clean, standardize, and validate the data.
@@ -78,5 +77,45 @@
         SQL portfolio project
         Foundation for exploratory data analysis
         Data / BI / AI Automation internship showcase
+        
+**4.COVID-19 Data Exploration using SQL**
+    This project analyzes global COVID-19 data using SQL to understand infection rates, death rates, and vaccination progress across countries and continents.
+    **Project Overview**
+    Using COVID-19 deaths and vaccination datasets, this project explores trends such as total cases, total deaths, population impact, and vaccination rollout. The analysis is performed entirely using SQL            queries, joins, window functions, CTEs, temporary tables, and views.
+    **Datasets Used**
+    CovidDeaths
+    CovidVaccinations
+    **Key Analysis Performed**
+    Total cases vs total deaths (death percentage)
+    Total cases vs population
+    Countries with highest infection rates
+    Countries with highest death counts
+    Continent-wise death analysis
+    Global daily COVID statistics
+    Population vs vaccination analysis using rolling totals
+    **SQL Concepts Used**
+    SELECT, WHERE, ORDER BY, GROUP BY
+    Aggregate functions (SUM, MAX)
+    Joins
+    Window functions (OVER, PARTITION BY)
+    Common Table Expressions (CTEs)
+    Temporary tables
+    Views for visualization readiness
+    Type casting and calculations
+    **Key Outputs**
+    Death percentage by country and date
+    Percentage of population infected
+    Rolling count of people vaccinated
+    Vaccination percentage per population
+    View created for downstream visualization tools
+  **Tools & Technologies**
+    SQL (MySQL / SQL Server)
+    Relational datasets
+    Analytical queries
+    **Use Case**
+    SQL portfolio project
+    Data analysis & exploration practice
+    Foundation for dashboards and visualizations
+    Data Analyst / BI / AI Automation internship showcase
 
    
